@@ -1,0 +1,3263 @@
+{
+  "skills": {
+    "디버그용 스킬": {
+      "role": "single",
+      "element": "fire",
+      "description": "디버그용 스킬입니다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 0,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.0
+            },
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ],
+      "special": {
+        "force_next_enemy_attack_miss": true
+      }
+    },
+    "돌격 베기": {
+      "role": "single",
+      "description": "적에게 돌진하며 무기를 휘두른다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "베어가르기": {
+      "role": "single",
+      "description": "날카로운 발톱이나 날붙이로 적을 벤다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "라이트닝 블레이드": {
+      "role": "single",
+      "element": "lightning",
+      "description": "번개의 힘을 두른 검으로 적을 벤다",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "플레임 블레이드": {
+      "role": "single",
+      "element": "fire",
+      "description": "화염을 두른 검으로 적을 벤다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "몽둥이질": {
+      "role": "single",
+      "description": "묵직한 몽둥이로 적을 공격한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "둔기 강타": {
+      "role": "single",
+      "description": "둔기를 휘둘러 강력한 일격을 가한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "철퇴 강타": {
+      "role": "single",
+      "description": "무거운 철퇴로 적을 강타한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "단검 투척": {
+      "role": "single",
+      "description": "날카로운 단검을 던져 적을 공격한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "방패 치기": {
+      "role": "single",
+      "description": "방패로 적을 후려쳐서 공격한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "창 찌르기": {
+      "role": "single",
+      "description": "날카로운 창으로 적을 찌른다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "어벤저": {
+      "role": "single",
+      "description": "강력한 보복 공격을 가한다. 잃은 체력이 많을수록 큰 피해를 준다. (n*공격력+n*자신의 잃은 체력) 물리 피해.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 6,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.55
+            },
+            {
+              "stat": "self_missing_hp",
+              "coef": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    "일도양단": {
+      "role": "single",
+      "description": "적의 몸통을 크게 베어가른다. 적의 체력이 많을수록 큰 피해를 준다. (n*공격력+n*적의 현재 체력) 물리 피해.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 10,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 2.6
+            },
+            {
+              "stat": "target_hp",
+              "coef": 0.18
+            }
+          ]
+        }
+      ]
+    },
+    "버티컬 스트라이크": {
+      "role": "single",
+      "description": "적을 향해 뛰어올라 강력한 참격을 가한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "처형": {
+      "role": "single",
+      "description": "상대의 명줄을 끊는 마무리 일격을 날린다. 이 스킬로 적을 처치했을 경우, 소모한 마나의 절반을 돌려받는다. (n*공격력+n*적의 잃은 체력) 물리 피해.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 10,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 2.2
+            },
+            {
+              "stat": "target_missing_hp",
+              "coef": 0.35
+            }
+          ]
+        }
+      ],
+      "special": {
+        "refund_mp_on_kill": 0.5
+      }
+    },
+    "에너지 샷": {
+      "role": "single",
+      "description": "마나를 응축한 탄환을 발사한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "마나 회복": {
+      "role": "heal",
+      "description": "자연의 마나를 끌어모아 자신의 마나를 회복한다. ( n*주문력*(자신의 스피드-상대의 스피드) )만큼 회복. 음수일 경우 회복하지 못한다.",
+      "element": "neutral",
+      "category": "heal",
+      "target": "ally",
+      "mp_cost": 4,
+      "components": [
+        {
+          "kind": "heal",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.0
+            },
+            {
+              "stat": "constant",
+              "coef": 10
+            }
+          ]
+        }
+      ]
+    },
+    "어나이얼레이트": {
+      "role": "single",
+      "description": "필멸의 의지를 담은 죽음의 광선을 발사한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "실명": {
+      "role": "debuff/accuracy",
+      "description": "3턴간 적의 명중률을 33+(n*주문력)% 감소시킨다.",
+      "element": "neutral",
+      "category": "debuff",
+      "target": "enemy",
+      "mp_cost": 4
+    },
+    "회복": {
+      "role": "heal/single",
+      "description": "아군 하나의 체력을 회복시킨다.",
+      "element": "neutral",
+      "category": "heal",
+      "target": "ally",
+      "mp_cost": 4,
+      "components": [
+        {
+          "kind": "heal",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.0
+            },
+            {
+              "stat": "constant",
+              "coef": 10
+            }
+          ]
+        }
+      ]
+    },
+    "치유의 빛": {
+      "role": "heal/plural",
+      "description": "아군 전체의 체력을 회복시킨다.",
+      "element": "neutral",
+      "category": "heal",
+      "target": "ally",
+      "mp_cost": 4,
+      "components": [
+        {
+          "kind": "heal",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.0
+            },
+            {
+              "stat": "constant",
+              "coef": 10
+            }
+          ]
+        }
+      ]
+    },
+    "재생": {
+      "role": "single/dot/buff",
+      "description": "5턴간 아군 하나의 매 턴마다 체력을 5+(n*주문력)% 회복시킨다.",
+      "element": "neutral",
+      "category": "heal",
+      "target": "ally",
+      "mp_cost": 4,
+      "components": [
+        {
+          "kind": "heal",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.0
+            },
+            {
+              "stat": "constant",
+              "coef": 10
+            }
+          ]
+        }
+      ]
+    },
+    "보호막": {
+      "role": "single/shield",
+      "description": "아군 하나에게 (n*주문력)만큼의 실드를 부여한다.",
+      "element": "neutral",
+      "category": "shield",
+      "target": "ally",
+      "mp_cost": 4,
+      "components": [
+        {
+          "kind": "shield",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    "강화": {
+      "role": "single/buff",
+      "description": "3턴간 아군 하나의 공격력을 5+(n*주문력)% 증가시킨다.",
+      "element": "neutral",
+      "category": "buff",
+      "target": "ally",
+      "mp_cost": 4
+    },
+    "신속": {
+      "role": "single/buff",
+      "description": "3턴간 아군 하나의 스피드를 1+(n*주문력)% 증가시킨다.",
+      "element": "neutral",
+      "category": "buff",
+      "target": "ally",
+      "mp_cost": 4
+    },
+    "뼈 방패": {
+      "role": "single/shield",
+      "description": "(n*체력)만큼의 실드를 얻는다.",
+      "element": "neutral",
+      "category": "shield",
+      "target": "ally",
+      "mp_cost": 4,
+      "components": [
+        {
+          "kind": "shield",
+          "terms": [
+            {
+              "stat": "self_hp",
+              "coef": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    "비열한 일격": {
+      "role": "single",
+      "description": "적에게 피해를 입히고, (n*공격력)만큼의 출혈 상태이상을 부여한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ],
+      "status_effects": [
+        {
+          "status": "bleed",
+          "target": "enemy",
+          "chance": 0.3,
+          "stacks": 3
+        }
+      ]
+    },
+    "육중한 일격": {
+      "role": "single",
+      "description": "거대한 주먹을 날려 적에게 강력한 일격을 가한다. 적이 작을 수록 큰 피해를 준다. (n*공격력/적의 최대 체력)만큼의 피해를 준다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "육탄 돌격": {
+      "role": "single",
+      "description": "몸을 던져 적에게 부딪친다. 자신도 피해량의 80%만큼의 반동 피해를 입는다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "짓밟기": {
+      "role": "single",
+      "description": "커다란 발로 적을 짓밟는다. 상대가 작을수록 큰 피해를 준다. (n*공격력+자신의 최대 체력/적의 최대 체력) 물리 피해.",
+      "element": "water",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "깔아뭉개기": {
+      "role": "single",
+      "description": "커다란 몸으로 상대를 덮친다. 상대가 작을수록 큰 피해를 준다. (n*공격력+자신의 최대 체력/적의 최대 체력) 물리 피해.",
+      "element": "water",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "날개치기": {
+      "role": "single",
+      "description": "커다란 날개로 상대를 후려친다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 0,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "집어삼키기": {
+      "role": "single",
+      "description": "커다란 입으로 상대를 집어삼킨다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "무지성 난동": {
+      "role": "single",
+      "description": "이성을 잃고 주위의 모든 것을 공격한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "암석 투척": {
+      "role": "single",
+      "element": "earth",
+      "description": "커다란 바위를 던져 적을 공격한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "물기": {
+      "role": "single",
+      "description": "적을 깨문다. 일정 확률로 (n*공격력)만큼의 출혈 상태이상을 부여한다.",
+      "element": "water",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ],
+      "status_effects": [
+        {
+          "status": "bleed",
+          "target": "enemy",
+          "chance": 0.3,
+          "stacks": 3
+        }
+      ]
+    },
+    "야습": {
+      "role": "single",
+      "description": "은신 상태에서 적을 기습 공격한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "급강하 공격": {
+      "role": "single",
+      "description": "하늘에서 급강하하여 적에게 돌격한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "살의": {
+      "role": "single/buff",
+      "description": "3턴간 기본 공격 피해량이 50% 증가한다.",
+      "element": "neutral",
+      "category": "buff",
+      "target": "ally",
+      "mp_cost": 4
+    },
+    "챔피언 피스트": {
+      "role": "single",
+      "description": "고블린 챔피언 준전용기. 바위도 부수는 주먹을 날린다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "흡혈 공격": {
+      "role": "single",
+      "description": "적에게 피해를 입히고, 입힌 피해의 10%만큼 자신의 체력을 회복한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "ally",
+      "mp_cost": 4,
+      "components": [
+        {
+          "kind": "heal",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.0
+            },
+            {
+              "stat": "constant",
+              "coef": 10
+            }
+          ]
+        }
+      ]
+    },
+    "생명력 흡수": {
+      "role": "single",
+      "description": "적에게 피해를 입히고, 입힌 피해의 18%만큼 자신의 체력을 회복한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "ally",
+      "mp_cost": 4,
+      "components": [
+        {
+          "kind": "heal",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.0
+            },
+            {
+              "stat": "constant",
+              "coef": 10
+            }
+          ]
+        }
+      ]
+    },
+    "생명 강탈": {
+      "role": "single",
+      "description": "적에게 피해를 입히고, 입힌 피해의 50%만큼 자신의 체력을 회복한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "ally",
+      "mp_cost": 4,
+      "components": [
+        {
+          "kind": "heal",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.0
+            },
+            {
+              "stat": "constant",
+              "coef": 10
+            }
+          ]
+        }
+      ]
+    },
+    "영혼의 절규": {
+      "role": "single",
+      "description": "끔찍한 비명을 지른다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "화살 사격": {
+      "role": "single",
+      "description": "적에게 화살을 발사한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "정조준 사격": {
+      "role": "single",
+      "description": "적의 약점을 집중 조준해서 사격한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ],
+      "status_effects": [
+        {
+          "status": "bleed",
+          "target": "enemy",
+          "chance": 0.2,
+          "stacks": 3
+        }
+      ]
+    },
+    "독화살": {
+      "role": "single",
+      "description": "독이 묻은 화살을 발사한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ],
+      "status_effects": [
+        {
+          "status": "poison",
+          "target": "enemy",
+          "chance": 0.4,
+          "stacks": 3
+        }
+      ]
+    },
+    "암흑 화살": {
+      "role": "single",
+      "description": "암흑의 화살을 만들어 발사한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.0
+            },
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "포이즌 니들": {
+      "role": "single",
+      "description": "적에게 피해를 입히고, (n*주문력)만큼의 중독 상태이상을 부여한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ],
+      "status_effects": [
+        {
+          "status": "poison",
+          "target": "enemy",
+          "chance": 0.3,
+          "stacks": 3
+        },
+        {
+          "status": "poison",
+          "target": "enemy",
+          "chance": 0.3,
+          "stacks": 3
+        }
+      ]
+    },
+    "방패 부수기": {
+      "role": "single",
+      "description": "적의 방패를 쪼개버릴 듯한 공격을 가한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ],
+      "special": {
+        "shield_brake": true
+      }
+    },
+    "암흑 베기": {
+      "role": "single",
+      "description": "암흑의 힘을 담아 적을 베어넘긴다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "끈적이는 점액": {
+      "role": "single/debuff/speed",
+      "description": "적을 끈적한 점액으로 덮어 움직임을 둔화시킨다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "산성 점액": {
+      "role": "single",
+      "description": "부식성 산성 점액을 적에게 뿌린다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "맹독 점액": {
+      "role": "single",
+      "description": "치명적인 독성 점액을 적에게 뿌린다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ],
+      "status_effects": [
+        {
+          "status": "poison",
+          "target": "enemy",
+          "chance": 0.4,
+          "stacks": 3
+        }
+      ]
+    },
+    "점액 경화": {
+      "role": "single",
+      "description": "점액을 단단하게 굳혀 방어력을 높인다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "사악한 손길": {
+      "role": "single",
+      "description": "악의를 담은 마력으로 은밀히 공격한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.0
+            },
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "섀도우 스트라이크": {
+      "role": "single",
+      "description": "그림자를 응축한 에너지 구체를 발사한다. 반드시 적중한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "섀도우 피어스": {
+      "role": "single",
+      "description": "암흑의 창을 적에게 꽂아 큰 피해를 준다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "섀도우 대쉬": {
+      "role": "single",
+      "description": "그림자처럼 빠르게 움직여 적에게 돌진한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "섀도우 볼트": {
+      "role": "single",
+      "description": "암흑의 구체를 만들어 발사한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.0
+            },
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "커스 블레이드": {
+      "role": "single",
+      "description": "저주를 실체화한 칼날로 적을 벤다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "다크니스 폴": {
+      "role": "single",
+      "description": "암흑의 기운을 폭발시켜 주변 적들에게 피해를 준다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "모방": {
+      "role": "single",
+      "description": "적의 형태와 기술을 모방한다. (자신의 스탯/상대의 스탯)만큼의 스탯을 얻고, 상대가 보유한 스킬을 사용할 수 있다. 모방을 다시 사용하거나, 전투가 끝날 때까지 지속된다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ],
+      "special": {
+        "transform": true
+      }
+    },
+    "광폭화": {
+      "role": "single/buff",
+      "description": "일정 시간 동안 공격력과 스피드를 대폭 증가시킨다.",
+      "element": "neutral",
+      "category": "buff",
+      "target": "ally",
+      "mp_cost": 4
+    },
+    "검기": {
+      "role": "single/buff",
+      "description": "검에 마력을 담는다. 5턴간 기본 공격 적중 시 (n*주문력)의 마법 피해를 입힌다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "검염": {
+      "role": "single/buff",
+      "description": "검기에 의지를 담아 불꽃을 일으킨다. 5턴간 기본 공격 적중 시 (n*주문력)의 마법 피해를 입힌다.",
+      "element": "fire",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "검강": {
+      "role": "single/buff",
+      "description": "자신의 의지를 온전히 검에 싣는다. 5턴간 기본 공격 적중 시 (n*주문력)의 마법 피해를 입힌다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "왕의 의지": {
+      "role": "single/buff",
+      "description": "남은 전투 동안 모든 스탯이 20% 증가하고, 패닉에 면역이 된다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ],
+      "status_effects": [
+        {
+          "status": "panic",
+          "target": "enemy",
+          "chance": 0.3,
+          "stacks": 3
+        }
+      ]
+    },
+    "피의 파도": {
+      "role": "plural",
+      "description": "엄청난 양의 선혈을 일으켜 적을 휩쓴다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "블러드 스피어": {
+      "role": "single",
+      "description": "선혈로 이루어진 창을 적에게 던진다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "피의 칼날": {
+      "role": "single",
+      "description": "선혈로 이루어진 칼날을 날려 공격한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "혈폭": {
+      "role": "plural",
+      "description": "선혈을 폭발시켜 주변 적들에게 피해를 준다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "용의 숨결": {
+      "role": "single",
+      "description": "용의 숨결을 내뿜어 공격한다. 일정 확률로 마비, 패닉 상태이상을 부여한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ],
+      "status_effects": [
+        {
+          "status": "paralysis",
+          "target": "enemy",
+          "chance": 0.3,
+          "stacks": 3
+        },
+        {
+          "status": "panic",
+          "target": "enemy",
+          "chance": 0.3,
+          "stacks": 3
+        }
+      ]
+    },
+    "드래곤 크로우": {
+      "role": "single",
+      "description": "거대한 발톱을 휘두른다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "파이어 브레스": {
+      "role": "plural",
+      "element": "fire",
+      "description": "전장을 휩쓰는 거대한 화염을 내뿜는다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "아이스 브레스": {
+      "role": "plural",
+      "element": "water",
+      "description": "모든 것을 얼려버리는 냉기를 내뿜는다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ],
+      "status_effects": [
+        {
+          "status": "freeze",
+          "target": "enemy",
+          "chance": 0.3,
+          "stacks": 3
+        }
+      ]
+    },
+    "라이트닝 브레스": {
+      "role": "plural",
+      "element": "lightning",
+      "description": "입에서 번개를 내뿜는다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "흑염탄": {
+      "role": "single",
+      "element": "fire",
+      "description": "검은 불꽃을 담은 탄환을 발사한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "산성 브레스": {
+      "role": "plural",
+      "description": "부식성 산성 가스를 내뿜는다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "가디언 오브 루인": {
+      "role": "buff",
+      "description": "자신의 방어력, 마법 저항력을 절반으로 하고, 그만큼 공격력, 주문력이 각각 상승한다. 전투가 끝날 때까지 지속된다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "역린": {
+      "role": "single",
+      "description": "용의 분노를 폭발시켜 무자비하게 공격한다. 적에게 입힌 피해의 20%만큼 반동 피해를 입는다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "포스 오브 아케인": {
+      "role": "single",
+      "element": "arcane",
+      "description": "아케인의 신비하고 압도적인 염력으로 적을 공격한다. 자신의 모든 스탯이 (원래 스탯의 10%)증가한다. 중복 적용 가능.",
+      "category": "buff",
+      "target": "ally",
+      "mp_cost": 6
+    },
+    "블라썸 오브 다크니스": {
+      "role": "plural",
+      "description": "암흑의 기운을 폭발시켜 주변 적들에게 피해를 준다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "종말의 돌격": {
+      "role": "single",
+      "description": "종말을 알리는 선봉이 되어 적에게 돌진한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "종말론적 사고": {
+      "role": "single/buff",
+      "description": "다음 턴, 자신의 치명타 확률이 100%가 된다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "파멸과 죽음": {
+      "role": "single",
+      "description": "적에게 죽음의 광선을 발사한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "매달리는 갈퀴": {
+      "role": "single",
+      "description": "가시돋친 갈퀴로 상대의 몸을 휘감는다. 3턴간 적의 스피드를 (n*공격력 + n*주문력)%만큼 감소시킨다.",
+      "element": "neutral",
+      "category": "debuff",
+      "target": "enemy",
+      "mp_cost": 4
+    },
+    "이블 휩": {
+      "role": "single",
+      "description": "사악한 힘이 담긴 갈퀴를 적에게 휘두른다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "채찍 폭풍": {
+      "role": "plural",
+      "description": "무수한 채찍질로 적을 무자비하게 강타한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "늑대 전술": {
+      "role": "plural",
+      "description": "동료와 함께 쉴틈없이 적을 공격하며 몰아붙인다. 적의 스피드가 (n*스피드)%만큼 감소한다.",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "헬파이어 버스트": {
+      "role": "plural",
+      "element": "fire",
+      "description": "케르베로스 준전용기. 지옥의 화염광선을 발사한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "헬파이어 스트림": {
+      "role": "plural",
+      "element": "fire",
+      "description": "헬 드래곤 전용기. 영혼마저 불사르는 지옥 그 자체의 업화.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "파이어": {
+      "role": "single",
+      "description": "대상 위치에 불 원소를 집중시켜 발화시킨다.",
+      "element": "fire",
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "constant",
+              "coef": 10
+            },
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ],
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5
+    },
+    "파이어 애로우": {
+      "role": "single",
+      "element": "fire",
+      "description": "불의 화살을 만들어 발사한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "파이어 볼": {
+      "role": "single",
+      "element": "fire",
+      "description": "작열하는 화염 구체를 만들어 발사한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "파이어 버스트": {
+      "role": "plural",
+      "element": "fire",
+      "description": "주변을 순식간에 불사르는 폭발적 위력의 화염 마법.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "버닝 익스플로전": {
+      "role": "plural",
+      "element": "fire",
+      "description": "불타오르는 폭발을 일으켜 적에게 화염 피해를 준다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ],
+      "status_effects": [
+        {
+          "status": "burn",
+          "target": "enemy",
+          "chance": 0.3,
+          "stacks": 3
+        }
+      ]
+    },
+    "플레임 휩": {
+      "role": "single",
+      "element": "fire",
+      "description": "불꽃 채찍을 휘둘러 적을 공격한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "파이어 토네이도": {
+      "role": "single",
+      "element": "fire",
+      "description": "불의 회오리를 일으켜 적을 휩쓴다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "라이징 플레어": {
+      "role": "plural",
+      "element": "fire",
+      "description": "항성의 플레어를 방불케 하는 강력한 화염 폭발을 일으킨다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "파이어 드래곤": {
+      "role": "plural",
+      "element": "fire",
+      "description": "용의 형상을 한 거대한 불기둥을 소환하여 적을 집어삼킨다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "헬파이어": {
+      "role": "plural",
+      "element": "fire",
+      "description": "영혼마저 불사르는 지옥의 화염으로 모든 것을 태워버린다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "워터 스플래시": {
+      "role": "single",
+      "element": "water",
+      "description": "마력을 담은 물을 분사한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "아이스 스피어": {
+      "role": "single",
+      "element": "water",
+      "description": "급속으로 냉각한 얼음의 창을 발사한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "워터 프리즌": {
+      "role": "single",
+      "element": "water",
+      "description": "적을 대량의 물로 감싼다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "매시브 워터폴": {
+      "role": "plural",
+      "element": "water",
+      "description": "대량의 중수를 쏟아부어 적 진영을 무너뜨린다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "하이드로펌프": {
+      "role": "single",
+      "element": "water",
+      "description": "강력한 수압으로 물을 분사한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "프로즌 블래스트": {
+      "role": "plural",
+      "element": "water",
+      "description": "강력한 냉기 폭풍을 발생시킨다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "쓰나미": {
+      "role": "plural",
+      "element": "water",
+      "description": "바다를 끌어온 듯한 엄청난 양의 물로 모든 것을 휩쓸어버린다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "블리자드": {
+      "role": "plural",
+      "element": "water",
+      "description": "보이는 모든 것을 얼려버릴 강력한 눈보라를 일으킨다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ],
+      "status_effects": [
+        {
+          "status": "freeze",
+          "target": "enemy",
+          "chance": 0.3,
+          "stacks": 3
+        }
+      ]
+    },
+    "에어 불릿": {
+      "role": "single",
+      "element": "air",
+      "description": "고압의 공기 탄환을 발사한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "에어 슬래시": {
+      "role": "single",
+      "element": "air",
+      "description": "공기를 칼날처럼 압축하여 적에게 쏘아낸다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "바람 장막": {
+      "role": "plural/buff",
+      "element": "air",
+      "description": "5턴간 아군이 받는 피해를 5+(n*주문력)% 감소시킨다.",
+      "category": "buff",
+      "target": "ally",
+      "mp_cost": 6
+    },
+    "윈드 스트라이크": {
+      "role": "single",
+      "element": "air",
+      "description": "바람의 힘을 일점에 집중시켜 강한 충격력을 준다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "순풍": {
+      "role": "plural/buff",
+      "element": "air",
+      "description": "5턴간 아군 전체의 스피드를 10+(n*주문력)% 증가시킨다.",
+      "category": "buff",
+      "target": "ally",
+      "mp_cost": 6
+    },
+    "폭풍": {
+      "role": "plural/dot/debuff",
+      "element": "air",
+      "description": "몸을 가누기조차 어려운 폭풍을 일으킨다. 3턴 동안 매 턴 모든 적에게 적 최대 체력의 0.5+(n*주문력)%만큼의 피해를 주고, 적의 마나 소모량이 (5+적 최대 체력*(n*주문력))%만큼 증가한다.",
+      "category": "debuff",
+      "target": "enemy",
+      "mp_cost": 6
+    },
+    "토네이도": {
+      "role": "plural",
+      "element": "air",
+      "description": "모든 것을 휩쓸어버리는 강력한 회오리를 발생시킨다. 적이 작을 수록 큰 피해를 준다. (n*주문력/적의 최대 체력)만큼의 피해를 준다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "스톰 스트라이크": {
+      "role": "single",
+      "element": "air",
+      "description": "극한의 마나 조절력으로 토네이도를 집중시켜 일격을 가한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "스톤 크래시": {
+      "role": "single",
+      "element": "earth",
+      "description": "묵직한 바위를 던져서 공격한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.0
+            },
+            {
+              "stat": "self_attack",
+              "coef": 1.55
+            }
+          ]
+        }
+      ]
+    },
+    "스톤 핸드": {
+      "role": "single",
+      "element": "earth",
+      "description": "지면을 뚫고 올라오는 암석 손을 만들어 공격한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.0
+            },
+            {
+              "stat": "self_attack",
+              "coef": 1.55
+            }
+          ]
+        }
+      ]
+    },
+    "스톤 골렘": {
+      "role": "summon",
+      "element": "earth",
+      "description": "5턴간 유지되는 스톤 골렘을 생성한다. 스톤 골렘은 (n*주문력)의 레벨을 가진다.",
+      "category": "summon",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "summon"
+        }
+      ],
+      "special": {
+        "summon": true
+      }
+    },
+    "스톤 샤워": {
+      "role": "single",
+      "element": "earth",
+      "description": "적에게 바위 파편을 쏟아붓는다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.0
+            },
+            {
+              "stat": "self_attack",
+              "coef": 1.55
+            }
+          ]
+        }
+      ]
+    },
+    "어스 리버스": {
+      "role": "single",
+      "element": "earth",
+      "description": "지면을 뒤집어 엎는다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "더스트 블래스트": {
+      "role": "single",
+      "element": "earth",
+      "description": "흙과 암석의 소용돌이를 만들어 공격한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "지진": {
+      "role": "plural",
+      "element": "earth",
+      "description": "대지를 뒤흔드는 강력한 지진을 일으킨다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "번개": {
+      "role": "single",
+      "element": "lightning",
+      "description": "적에게 번개를 내리친다. 매우 높은 확률로 감전시킨다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ],
+      "status_effects": [
+        {
+          "status": "paralysis",
+          "target": "enemy",
+          "chance": 0.8,
+          "stacks": 2
+        }
+      ]
+    },
+    "아케인 버스트": {
+      "role": "single",
+      "element": "arcane",
+      "description": "아케인의 신비한 힘으로 적을 분쇄한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "아케인 블레이드": {
+      "role": "single",
+      "element": "arcane",
+      "description": "아케인의 힘을 실은 검으로 적을 양단한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "마나 버스트": {
+      "role": "single",
+      "element": "arcane",
+      "description": "자신의 모든 마나를 소모하여 적에게 발사한다. (n*소모한 마나) 마법 피해.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 0,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_spent_mp",
+              "coef": 2.0
+            },
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ],
+      "special": {
+        "mp_cost_mode": "all_current_mp"
+      }
+    },
+    "아르카나 포스-미래예지": {
+      "role": "single/buff",
+      "element": "arcane",
+      "description": "다음 턴, 적의 공격이 반드시 빗나간다.",
+      "category": "buff",
+      "target": "self",
+      "mp_cost": 8,
+      "components": [],
+      "special": {
+        "force_next_enemy_attack_miss": true
+      }
+    },
+    "아르카나 포스-꿰뚫어보는 눈": {
+      "role": "single/buff",
+      "element": "arcane",
+      "description": "남은 전투 동안, 아케인 속성 공격을 제외한 모든 피해를 20% 적게 받는다. 방어력에 의한 경감보다 먼저 적용된다.",
+      "category": "buff",
+      "target": "self",
+      "mp_cost": 10,
+      "components": [],
+      "special": {
+        "incoming_non_arcane_damage_multiplier": 0.8,
+        "duration_type": "battle"
+      }
+    },
+    "아르카나 포스-필멸": {
+      "role": "single",
+      "element": "arcane",
+      "description": "적의 약점을 파악하고 그곳에 모든 힘을 집중하여 일격을 날린다. 다음 턴, 마비 상태이상을 얻는다. (0.5*적 최대 체력) 고정 피해.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 15,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "true",
+          "terms": [
+            {
+              "stat": "target_max_hp",
+              "coef": 0.5
+            }
+          ]
+        }
+      ],
+      "status_effects": [
+        {
+          "status": "paralysis",
+          "target": "self",
+          "chance": 1.0,
+          "stacks": 1
+        }
+      ]
+    },
+    "지폭천성": {
+      "role": "plural",
+      "element": "arcane",
+      "description": "지면을 붕괴시키고, 그 파편으로 대상을 핵으로 삼는 구체를 형성한다. 어느 세계의 신은 이 기술로 달을 만들었다고 전해진다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "만상천인": {
+      "role": "plural",
+      "element": "arcane",
+      "description": "중력을 조작하여 강대한 인력을 발생시킨다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "신라천정": {
+      "role": "plural",
+      "element": "arcane",
+      "description": "중력을 조작하여 강대한 척력을 발생시킨다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "천애진성": {
+      "role": "plural",
+      "element": "arcane",
+      "description": "만상천인의 인력을 극대화하여 우주공간의 운석을 끌어온다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "람둔광아": {
+      "role": "single",
+      "element": "arcane",
+      "description": "어떤 것이라도 절단내버리는 에너지 광선을 입에서 발사한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "차원 왜곡 방어막": {
+      "role": "single/buff",
+      "element": "arcane",
+      "description": "차원을 왜곡하여 적의 공격이 닿지 않게 한다. 2~3턴간 받는 피해량이 100% 감소한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "가시 방패": {
+      "role": "single/buff",
+      "description": "자신의 주위에 떠다니는 가시 영역을 생성한다. 적에게 물리 피해를 받을 때마다 (n*주문력)% 만큼 피해를 반사한다.",
+      "element": "water",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "악의 의지": {
+      "role": "plural",
+      "description": "세상을 악으로 물들이겠다는 의지를 실체화하여 방출한다.",
+      "element": "water",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "파멸의 광우": {
+      "role": "plural",
+      "description": "무수한 붉은 광선을 비처럼 쏟아내린다.\n\"세상의 파멸이 도래했군... 젠장할, 신이시여...\"",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "현신-아스모데우스": {
+      "role": "single/buff",
+      "description": "마신 아스모데우스가 진정한 형태로 강림한다. 남은 전투 동안 모든 스텟이 100% 상승하지만, 매 턴 (25*최대 체력+25*최대 마나) 피해를 입는다.\n\"마신 아스모데우스이시여! 제게 강림하시어 적에게 파멸을 선사해 주십시오!\n -사천왕 아스모데우스\"",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "앨리스": {
+      "role": "single",
+      "description": "7턴 후, 상대는 (적 최대 체력의 100%) 피해를 입는다.\n\"나의 분노, 나의 증오, 나의 한. 세상은 이미 그걸 감당할 수조차 없이 타락했다. 전부 사라져라.\"",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "소드 오브 아이테르": {
+      "role": "single",
+      "description": "신의 의지를 잇는 용사의 검격.\n\"천제 아이테르시여, 제게 악을 멸할 용기를 주시옵소서.\"",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "저스티스 오브 아이테르": {
+      "role": "plural",
+      "description": "속죄한 앨리스가 자신의 모든 존재력을 담아 완성시켜준 최후의 검격. 혼돈을 잠재울지어다.\n\"이런 나조차 구원받을 수 있다면, 속죄할 수 있다면... 내 존재를 불살라서라도 그리 하겠다.\n(플레이어 이름), 네게 내 모든 걸 맡기마.\"",
+      "element": "fire",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "차원입자포": {
+      "role": "single",
+      "element": "arcane",
+      "description": "대상을 입자 단위로 분해하는 치명적 광선을 발사한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "회전 블레이드": {
+      "role": "single",
+      "element": "neutral",
+      "description": "블레이드 가르디아 전용기. 회전하는 칼날 원통을 날린다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.55
+            }
+          ]
+        }
+      ]
+    },
+    "트리플 큐빅 버스트": {
+      "role": "single",
+      "element": "arcane",
+      "description": "이차원초수 버스터 간다일 전용기",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "큐빅 스트라이크": {
+      "role": "single",
+      "element": "arcane",
+      "description": "이차원초수 버스터 간다일 전용기",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "이차원 부스트 너클": {
+      "role": "single",
+      "description": "이차원파수기 듀자 전용기",
+      "element": "neutral",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 3,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "physical",
+          "terms": [
+            {
+              "stat": "self_attack",
+              "coef": 1.25
+            }
+          ]
+        }
+      ]
+    },
+    "인디오라 데스볼트": {
+      "role": "single",
+      "element": "lightning",
+      "description": "이차원초수 인디오라 데스볼트 전용기",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "암흑차원사신격": {
+      "role": "single",
+      "element": "arcane",
+      "description": "암흑차원신 크림즌 노바 준(準)전용기",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 5,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 1.7
+            }
+          ]
+        }
+      ]
+    },
+    "팔정도 제 0식-흑주(黑晝)": {
+      "role": "plural",
+      "element": "arcane",
+      "description": "핵융합 폭발을 일으킨다.\n\"나는 세계의 종말이요, 파괴자가 되었도다.\"",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 100,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "true",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 10.0
+            }
+          ]
+        }
+      ]
+    },
+    "팔정도 제 1식-쇼트(Short Circuit)": {
+      "role": "plural",
+      "element": "arcane",
+      "description": "특수한 마력을 방출시켜 EMP를 발생시키고, 주변의 마력 회로를 차단한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 10,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 2.55
+            }
+          ]
+        }
+      ]
+    },
+    "팔정도 제 2식-아발란체(Avalanche)": {
+      "role": "plural",
+      "element": "arcane",
+      "description": "물체를 이온화하여 전류가 통하게 한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 10,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 2.55
+            }
+          ]
+        }
+      ]
+    },
+    "팔정도 제 3식-테슬라(Tesla)": {
+      "role": "plural",
+      "element": "arcane",
+      "description": "자기장을 생성하거나 세기를 조작한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 10,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 2.55
+            }
+          ]
+        }
+      ]
+    },
+    "팔정도 제 4식-콘덴세이션(Condensation)": {
+      "role": "plural",
+      "element": "arcane",
+      "description": "대기중의 입자를 응축시켜 기체 분자의 잠열을 방출한다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 10,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 2.55
+            }
+          ]
+        }
+      ]
+    },
+    "팔정도 제 5식-차지 커런트(Charged Current)": {
+      "role": "plural",
+      "element": "arcane",
+      "description": "전기를 충전하여 모은다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 10,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 2.55
+            }
+          ]
+        }
+      ]
+    },
+    "팔정도 제 6식-디케이(Decay)": {
+      "role": "plural",
+      "element": "arcane",
+      "description": "핵붕괴를 일으켜 방사선을 방출하고, 물질을 변화시킨다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 10,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 2.55
+            }
+          ]
+        }
+      ]
+    },
+    "팔정도 제 7식-피션(Fission)": {
+      "role": "plural",
+      "element": "arcane",
+      "description": "핵분열을 일으킨다.",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 10,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            {
+              "stat": "self_magic",
+              "coef": 2.55
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1025 @@
+{
+  "equipment": {
+    "가죽 각반": {
+      "slot": "각반",
+      "rarity": "COMMON",
+      "description": "\"이봐 친구, 이거 굳이 입어야 해?\"",
+      "stats": {
+        "defense": 1,
+        "speed": 1
+      },
+      "set_name": "가죽",
+      "price": 15
+    },
+    "가죽 부츠": {
+      "slot": "부츠",
+      "rarity": "COMMON",
+      "description": "가죽 재질의 부츠. 오랜 시간 걷기에 좋다. 철 부츠보다는.",
+      "stats": {
+        "defense": 1,
+        "speed": 1
+      },
+      "set_name": "가죽",
+      "price": 15
+    },
+    "가죽 실프": {
+      "slot": "방패",
+      "rarity": "UNCOMMON",
+      "price": 35,
+      "description": "가죽 재질의 실프. 사용자의 마나를 사용하여 방어막을 생성한다.\n\"마나를 다루는 데 익숙하지 않다면 그냥 방패를 쓰십시오.\n매지컬 테치카 사는 사용자의 부주의로 인한 상해는 책임지지 않습니다.\"",
+      "stats": {
+        "defense": 4
+      }
+    },
+    "가죽 투구": {
+      "slot": "투구",
+      "rarity": "COMMON",
+      "description": "가죽으로 만든 투구. 가벼워서 착용감이 좋지만, 방어력은 기대하기 어렵지만, 안 쓰는 것보단 낫다.",
+      "stats": {
+        "defense": 1,
+        "speed": 1
+      },
+      "set_name": "가죽",
+      "price": 15
+    },
+    "가죽 흉갑": {
+      "slot": "흉갑",
+      "rarity": "COMMON",
+      "description": "얇은 철판을 덧대어 만든 흉갑. 가죽 재질이라 무겁지 않다.",
+      "stats": {
+        "defense": 2,
+        "max_hp": 10
+      },
+      "set_name": "가죽",
+      "price": 30
+    },
+    "강철 각반": {
+      "slot": "각반",
+      "rarity": "UNCOMMON",
+      "price": 140,
+      "description": "튼튼한 강철로 만든 각반. 움직임이 다소 둔해지지만 방어력은 확실히 보장한다.",
+      "stats": {
+        "defense": 6,
+        "speed": -1
+      },
+      "set_name": "강철"
+    },
+    "강철 부츠": {
+      "slot": "부츠",
+      "rarity": "UNCOMMON",
+      "price": 140,
+      "description": "튼튼한 강철로 만든 부츠. 신고 오래 걸으면 발이 아프다.",
+      "stats": {
+        "defense": 4
+      },
+      "set_name": "강철"
+    },
+    "강철 투구": {
+      "slot": "투구",
+      "rarity": "UNCOMMON",
+      "price": 140,
+      "description": "튼튼한 강철로 만든 투구. 웬만한 투사체 공격은 다 막아낸다.",
+      "stats": {
+        "defense": 6,
+        "max_hp": 20
+      },
+      "set_name": "강철"
+    },
+    "강철 흉갑": {
+      "slot": "흉갑",
+      "rarity": "UNCOMMON",
+      "price": 140,
+      "description": "튼튼한 강철로 만든 흉갑. 조금 무겁다.",
+      "stats": {
+        "defense": 7,
+        "max_hp": 32,
+        "speed": -1
+      },
+      "set_name": "강철"
+    },
+    "나무 완드": {
+      "slot": "양손 무기",
+      "rarity": "COMMON",
+      "weapon_hand": "TWO_HAND",
+      "description": "마법의 위력을 증강시키는 나무 완드. 생각보다 가볍지 않다.\n\"이거 우리 할머니가 쓰던 지팡이랑 똑같이 생겼는데?\"",
+      "stats": {
+        "spell_power": 15,
+        "max_mp": 10
+      },
+      "price": 120
+    },
+    "네메아의 사자가죽": {
+      "slot": "흉갑",
+      "rarity": "LEGENDARY",
+      "price": 600,
+      "description": "절대 찢어지지 않는다는 전설의 사자가죽으로 만든 흉갑. 근데 어떻게 벗겨냈는지는 모르겠다.",
+      "stats": {
+        "defense": 38,
+        "magic_resist": 24,
+        "max_hp": 330
+      },
+      "unique": true,
+      "special": [
+        {
+          "tag": "STATUS_RESIST",
+          "status": "bleed",
+          "mult": 0.6
+        }
+      ]
+    },
+    "대현자의 망토": {
+      "slot": "망토",
+      "rarity": "EPIC",
+      "price": 505,
+      "description": "왕국의 최고위 마법사인 아크메이지들이 입는 망토. 별의 힘이 깃들었다고 한다.",
+      "stats": {
+        "spell_power": 59,
+        "magic_resist": 11,
+        "max_mp": 58
+      }
+    },
+    "드래곤 각반": {
+      "slot": "각반",
+      "rarity": "EPIC",
+      "price": 470,
+      "description": "용의 비늘로 만든 각반. 강력한 방어력을 자랑한다.",
+      "stats": {
+        "defense": 16,
+        "magic_resist": 11,
+        "speed": 8
+      },
+      "set_name": "드래곤",
+      "special": [
+        {
+          "tag": "ELEMENT_RESIST",
+          "element": "all",
+          "mult": 0.05
+        }
+      ]
+    },
+    "드래곤 부츠": {
+      "slot": "부츠",
+      "rarity": "EPIC",
+      "price": 540,
+      "description": "용의 비늘로 만든 부츠. 강력한 방어력을 자랑한다.",
+      "stats": {
+        "defense": 14,
+        "magic_resist": 8,
+        "speed": 5
+      },
+      "set_name": "드래곤",
+      "special": [
+        {
+          "tag": "ELEMENT_RESIST",
+          "element": "all",
+          "mult": 0.05
+        }
+      ]
+    },
+    "드래곤 소드": {
+      "slot": "양손 무기",
+      "rarity": "LEGENDARY",
+      "price": 1200,
+      "weapon_hand": "TWO_HAND",
+      "description": "용의 육체로 만들어지고 용의 혼으로 벼려진 최강의 검.",
+      "stats": {
+        "attack": 52,
+        "spell_power": 77,
+        "speed": 7
+      },
+      "set_name": "드래곤",
+      "special": [
+        {
+          "tag": "ELEMENT_DAMAGE_BONUS",
+          "element": "fire",
+          "mult": 0.1
+        },
+        {
+          "tag": "ON_HIT_CHANCE_STATUS",
+          "status": "burn",
+          "chance": 0.2,
+          "stacks": 2
+        }
+      ]
+    },
+    "드래곤 소울": {
+      "slot": "한손 무기",
+      "rarity": "EPIC",
+      "price": 670,
+      "weapon_hand": "ONE_HAND",
+      "description": "용의 영혼이 깃든 카탈리스트. 강력한 마법의 위력을 자랑한다.",
+      "stats": {
+        "spell_power": 89,
+        "max_mp": 48,
+        "magic_resist": 8
+      }
+    },
+    "드래곤 실드": {
+      "slot": "방패",
+      "rarity": "LEGENDARY",
+      "price": 800,
+      "description": "용의 비늘로 만든 방패. 강력한 방어력을 자랑한다.",
+      "stats": {
+        "defense": 42,
+        "magic_resist": 21,
+        "max_hp": 150,
+        "max_shield": 280
+      },
+      "set_name": "드래곤",
+      "special": [
+        {
+          "tag": "ELEMENT_RESIST",
+          "element": "all",
+          "mult": 0.05
+        }
+      ]
+    },
+    "드래곤 헬멧": {
+      "slot": "투구",
+      "rarity": "EPIC",
+      "price": 670,
+      "description": "용의 비늘로 만든 투구. 강력한 방어력을 자랑한다.",
+      "stats": {
+        "defense": 24,
+        "magic_resist": 14,
+        "max_hp": 120
+      },
+      "set_name": "드래곤",
+      "special": [
+        {
+          "tag": "ELEMENT_RESIST",
+          "element": "all",
+          "mult": 0.05
+        }
+      ]
+    },
+    "드래곤 흉갑": {
+      "slot": "흉갑",
+      "rarity": "EPIC",
+      "price": 605,
+      "description": "용의 비늘로 만든 흉갑. 강력한 방어력을 자랑한다.",
+      "stats": {
+        "defense": 32,
+        "magic_resist": 22,
+        "max_hp": 168
+      },
+      "set_name": "드래곤",
+      "special": [
+        {
+          "tag": "ELEMENT_RESIST",
+          "element": "all",
+          "mult": 0.05
+        }
+      ]
+    },
+    "드래곤의 반지": {
+      "slot": "반지",
+      "rarity": "LEGENDARY",
+      "price": 300,
+      "description": "용의 힘이 깃든 반지. 모든 능력치가 상승한다.",
+      "stats": {
+        "attack": 10,
+        "spell_power": 23,
+        "defense": 7,
+        "magic_resist": 7,
+        "max_hp": 105,
+        "max_mp": 60,
+        "speed": 4
+      },
+      "set_name": "드래곤",
+      "special": [
+        {
+          "tag": "ELEMENT_RESIST",
+          "element": "all",
+          "mult": 0.05
+        }
+      ],
+      "unique": true
+    },
+    "라바의 죽음모자": {
+      "slot": "투구",
+      "rarity": "LEGENDARY",
+      "price": 480,
+      "description": "사악한 이계의 벌레 마수 라바의 부산물로 만든 모자. 사용자의 주문력을 극대화하는 대가로 정신력을 소모한다.",
+      "stats": {
+        "spell_power": 216,
+        "max_mp": -60
+      },
+      "unique": true,
+      "special": [
+        {
+          "tag": "SPELL_DAMAGE_MULT",
+          "mult": 1.15
+        },
+        {
+          "tag": "MP_COST_MULT",
+          "mult": 1.25
+        }
+      ]
+    },
+    "라운드 우든 실드": {
+      "slot": "방패",
+      "rarity": "COMMON",
+      "price": 15,
+      "description": "나무로 만든 둥근 방패. 가볍고 튼튼하다.\n\"신입이면 깝치지 말고 하나 장만해. 방패가 있고 없고는 천지 차이니까.\"",
+      "stats": {
+        "defense": 2,
+        "max_shield": 10
+      }
+    },
+    "라이트닝 소드": {
+      "slot": "양손 무기",
+      "rarity": "EPIC",
+      "price": 670,
+      "weapon_hand": "TWO_HAND",
+      "description": "번개의 힘이 깃든 검. 스킬 '라이트닝 스트라이크'를 사용할 수 있다.",
+      "stats": {
+        "attack": 32,
+        "spell_power": 48,
+        "speed": 5
+      },
+      "special": [
+        {
+          "tag": "GRANT_SKILL",
+          "skill": "라이트닝 스트라이크"
+        },
+        {
+          "tag": "ELEMENT_DAMAGE_BONUS",
+          "element": "lightning",
+          "mult": 0.12
+        }
+      ]
+    },
+    "로브": {
+      "slot": "망토",
+      "rarity": "COMMON",
+      "price": 40,
+      "description": "추위를 막아주는 망토. 멋으로 입을 생각이라면 다른 걸 고르자.\n\"마법사들은 왜 하나같이 다 이걸 입는 거야?\"",
+      "stats": {
+        "spell_power": 9,
+        "max_mp": 10
+      }
+    },
+    "롱소드": {
+      "slot": "양손 무기",
+      "rarity": "COMMON",
+      "price": 140,
+      "weapon_hand": "ONE_HAND",
+      "description": "튼튼한 강철로 만든 롱소드.\n\"이제야 초짜 티를 벗었네.\"",
+      "stats": {
+        "attack": 10
+      }
+    },
+    "마녀의 부츠": {
+      "slot": "부츠",
+      "rarity": "RARE",
+      "price": 310,
+      "description": "마법사들이 즐겨 신는 부츠. 실제로 마녀들이 신는 건 아니다.",
+      "stats": {
+        "max_mp": 36,
+        "speed": 4
+      }
+    },
+    "마력의 반지": {
+      "slot": "반지",
+      "rarity": "RARE",
+      "price": 170,
+      "description": "착용하면 마법 공격력과 최대 마나가 상승한다.",
+      "stats": {
+        "spell_power": 18,
+        "max_mp": 22
+      }
+    },
+    "마룡의 지팡이": {
+      "slot": "양손 무기",
+      "rarity": "LEGENDARY",
+      "price": 1120,
+      "weapon_hand": "TWO_HAND",
+      "description": "사악한 마룡의 힘이 깃든 지팡이. 마법의 위력이 대폭 상승한다.",
+      "stats": {
+        "spell_power": 154,
+        "max_mp": 90,
+        "speed": 4
+      }
+    },
+    "매지컬 실크햇": {
+      "slot": "투구",
+      "rarity": "UNCOMMON",
+      "price": 150,
+      "description": "마법사들이 즐겨 쓰는 실크햇. 주문력과 마나를 약간 올려준다.\n\"글쎄 난 서커스단이 아니라니까? 초능력 맛 좀 볼래?\"",
+      "stats": {
+        "spell_power": 15,
+        "max_mp": 20
+      }
+    },
+    "몰락한 왕의 반지": {
+      "slot": "반지",
+      "rarity": "EPIC",
+      "price": 200,
+      "description": "한때 강력한 왕이었던 자의 반지. 주문력과 마법 저항력을 크게 올려준다.",
+      "stats": {
+        "spell_power": 48,
+        "magic_resist": 16
+      },
+      "unique": true
+    },
+    "미스릴 각반": {
+      "slot": "각반",
+      "rarity": "RARE",
+      "price": 365,
+      "description": "미스릴로 만든 각반. 철보다 가볍고 튼튼하다.",
+      "stats": {
+        "defense": 10,
+        "magic_resist": 6,
+        "speed": 4
+      },
+      "set_name": "미스릴"
+    },
+    "미스릴 부츠": {
+      "slot": "부츠",
+      "rarity": "RARE",
+      "price": 170,
+      "description": "미스릴로 만든 각반. 철보다 가볍고 튼튼하다.",
+      "stats": {
+        "defense": 8,
+        "speed": 2
+      },
+      "set_name": "미스릴"
+    },
+    "미스릴 아밍 소드": {
+      "slot": "한손 무기",
+      "rarity": "RARE",
+      "price": 225,
+      "weapon_hand": "ONE_HAND",
+      "description": "미스릴로 만든 한손검. 가볍고 튼튼하다.",
+      "stats": {
+        "attack": 14,
+        "speed": 2
+      }
+    },
+    "미스릴 투구": {
+      "slot": "투구",
+      "rarity": "EPIC",
+      "price": 405,
+      "description": "미스릴로 만든 투구. 철보다 가볍고 튼튼하다.",
+      "stats": {
+        "defense": 19,
+        "magic_resist": 11,
+        "max_hp": 60,
+        "speed": 3
+      },
+      "set_name": "미스릴"
+    },
+    "미스릴 흉갑": {
+      "slot": "흉갑",
+      "rarity": "EPIC",
+      "price": 605,
+      "description": "미스릴로 만든 흉갑. 철보다 가볍고 튼튼하다.",
+      "stats": {
+        "defense": 24,
+        "magic_resist": 14,
+        "max_hp": 108,
+        "speed": 3
+      },
+      "set_name": "미스릴"
+    },
+    "미스틱 로브": {
+      "slot": "망토",
+      "rarity": "RARE",
+      "price": 280,
+      "description": "사용자의 마법 운용을 크게 향상시켜주는 명품 로브.\n\"이제 나도 고수라고 할 수 있지. 고수가 됐으니 고수질 좀 해야겠다.\"",
+      "stats": {
+        "spell_power": 44,
+        "magic_resist": 8,
+        "max_mp": 45
+      }
+    },
+    "미스틱 실드": {
+      "slot": "방패",
+      "rarity": "RARE",
+      "price": 210,
+      "description": "마법의 힘이 깃든 방패. 강력한 방어력을 자랑한다.",
+      "stats": {
+        "defense": 16,
+        "magic_resist": 8,
+        "max_hp": 54,
+        "max_shield": 100
+      }
+    },
+    "바스티드 소드": {
+      "slot": "양손 무기",
+      "rarity": "COMMON",
+      "price": 40,
+      "weapon_hand": "ONE_HAND",
+      "description": "싼 값에 써먹을 수 있는 바스티드 소드.\"초짜가 새거 사봤자 금방 망가뜨리기만 하잖아. 이 정도면 충분하지.\"",
+      "stats": {
+        "attack": 8,
+        "speed": -1
+      }
+    },
+    "보급형 룬 모자": {
+      "slot": "투구",
+      "rarity": "COMMON",
+      "description": "가난한 모험가들을 위한 가성비 모자. 술식 강화 룬이 새겨져 있다.\n\"싸구려 룬 하나 박아놨다고 천쪼가리를 비싸게도 팔아먹는군. 없는 것보다는 낫지만.\"",
+      "stats": {
+        "spell_power": 4,
+        "max_mp": 8,
+        "max_shield": 15
+      },
+      "price": 120
+    },
+    "사슬 흉갑": {
+      "slot": "흉갑",
+      "rarity": "UNCOMMON",
+      "price": 130,
+      "description": "튼튼한 사슬로 만든 갑옷. 방어력과 마법 저항력이 약간 상승한다.",
+      "stats": {
+        "defense": 7,
+        "magic_resist": 3,
+        "max_hp": 32
+      }
+    },
+    "생명의 반지": {
+      "slot": "반지",
+      "rarity": "UNCOMMON",
+      "price": 130,
+      "description": "착용하면 최대 체력이 상승한다.",
+      "stats": {
+        "max_hp": 26
+      }
+    },
+    "서리 마법봉": {
+      "slot": "한손 무기",
+      "rarity": "RARE",
+      "price": 225,
+      "weapon_hand": "ONE_HAND",
+      "description": "수속성 마법의 위력을 높여주는 마법봉.",
+      "stats": {
+        "spell_power": 35,
+        "magic_resist": 4
+      },
+      "special": [
+        {
+          "tag": "ELEMENT_DAMAGE_BONUS",
+          "element": "water",
+          "mult": 0.1
+        }
+      ]
+    },
+    "수습생의 망토": {
+      "slot": "망토",
+      "rarity": "COMMON",
+      "price": 55,
+      "description": "수습생들이 입는 기본 망토. 마나를 조금 높여준다.",
+      "stats": {
+        "spell_power": 7,
+        "max_mp": 10
+      }
+    },
+    "수습생의 지팡이": {
+      "slot": "양손 무기",
+      "rarity": "COMMON",
+      "price": 90,
+      "weapon_hand": "TWO_HAND",
+      "description": "마법의 기초를 배우는 수습생들이 사용하는 지팡이.",
+      "stats": {
+        "spell_power": 22,
+        "max_mp": 14
+      }
+    },
+    "수호의 반지": {
+      "slot": "반지",
+      "rarity": "RARE",
+      "price": 135,
+      "description": "착용하면 방어력과 마법 저항력이 상승한다.",
+      "stats": {
+        "defense": 4,
+        "magic_resist": 4,
+        "max_shield": 30
+      }
+    },
+    "스파이크 실드": {
+      "slot": "방패",
+      "rarity": "RARE",
+      "price": 170,
+      "description": "가시가 돋친 방패. 적의 공격을 막아내는 동시에 반격할 수 있다.",
+      "stats": {
+        "defense": 10,
+        "attack": 6,
+        "speed": -2,
+        "max_shield": 40
+      },
+      "special": [
+        {
+          "tag": "THORNS",
+          "flat": 8
+        }
+      ]
+    },
+    "실크 로브": {
+      "slot": "망토",
+      "rarity": "UNCOMMON",
+      "price": 115,
+      "description": "실크로 만든 로브. 마법 시전에 도움이 되는 특수 실크로 제작되었다.\n\"이제 좀 마법사 티가 나네.\"",
+      "stats": {
+        "spell_power": 18,
+        "magic_resist": 3,
+        "max_mp": 20
+      }
+    },
+    "아밍 소드": {
+      "slot": "한손 무기",
+      "rarity": "COMMON",
+      "price": 20,
+      "weapon_hand": "ONE_HAND",
+      "description": "휴대성이 좋은 한손검.",
+      "stats": {
+        "attack": 4
+      }
+    },
+    "아이언 실드": {
+      "slot": "방패",
+      "rarity": "UNCOMMON",
+      "price": 105,
+      "description": "튼튼한 철로 만든 방패. 무겁지만 방어력은 확실히 보장한다.",
+      "stats": {
+        "defense": 8,
+        "speed": -1,
+        "max_shield": 21
+      }
+    },
+    "암흑차원사신검": {
+      "slot": "양손 무기",
+      "rarity": "LEGENDARY",
+      "price": 1600,
+      "weapon_hand": "TWO_HAND",
+      "description": "암흑차원신의 힘이 깃든 어둠의 검.",
+      "stats": {
+        "attack": 70,
+        "spell_power": 116,
+        "speed": 10
+      },
+      "special": [
+        {
+          "tag": "LIFESTEAL",
+          "pct": 0.12
+        },
+        {
+          "tag": "TRUE_DAMAGE_BONUS",
+          "flat": 6
+        }
+      ]
+    },
+    "양손 도끼": {
+      "slot": "양손 무기",
+      "rarity": "COMMON",
+      "price": 180,
+      "weapon_hand": "TWO_HAND",
+      "description": "적의 뚝배기를 양단해버릴 수 있다. 무거운 게 단점.",
+      "stats": {
+        "attack": 13,
+        "speed": -1
+      }
+    },
+    "여명의 눈": {
+      "slot": "양손 무기",
+      "rarity": "LEGENDARY",
+      "price": 1760,
+      "weapon_hand": "TWO_HAND",
+      "description": "태양이 힘이 깃들었다고 전해지는 3급 아티팩트. 화염 속성 마법의 위력이 대폭 상승한다.",
+      "stats": {
+        "spell_power": 139,
+        "max_mp": 75,
+        "speed": 7
+      }
+    },
+    "우추의 추진력": {
+      "slot": "투구",
+      "rarity": "RARE",
+      "price": 350,
+      "description": "아크메이지 우추가 직접 발명한 플래그십 장비. 착용자의 주문력을 크게 올려준다.",
+      "stats": {
+        "spell_power": 53,
+        "max_mp": 36
+      }
+    },
+    "유리 완드": {
+      "slot": "한손 무기",
+      "rarity": "UNCOMMON",
+      "price": 150,
+      "weapon_hand": "ONE_HAND",
+      "description": "유리로 만든 완드. 깨지기 쉬우니 조심해서 다루자.",
+      "stats": {
+        "spell_power": 18,
+        "max_mp": 10
+      }
+    },
+    "조잡한 마력 부츠": {
+      "slot": "부츠",
+      "rarity": "COMMON",
+      "description": "마나를 약간 올려주는 부츠.\n\"내가 아카데미까지 졸업했는데 이딴 걸 신어야 돼?\"\n\"깝치지 말고 신어. 인생은 실전이야 좆만아.\"",
+      "stats": {
+        "max_mp": 10,
+        "speed": 1,
+        "max_shield": 10
+      },
+      "price": 70
+    },
+    "지배자의 왕관": {
+      "slot": "투구",
+      "rarity": "LEGENDARY",
+      "price": 520,
+      "description": "\"지배자는 항상 세계가 무엇인지가 아니라, 어떻게 존재해야 하는지에 대해 논해야 한다.\"",
+      "stats": {
+        "attack": 14,
+        "spell_power": 46,
+        "defense": 10,
+        "magic_resist": 10,
+        "max_hp": 150,
+        "max_mp": 60,
+        "speed": 7
+      },
+      "unique": true
+    },
+    "지혜의 반지": {
+      "slot": "반지",
+      "rarity": "UNCOMMON",
+      "price": 100,
+      "description": "착용하면 지혜가 약간 상승한다.",
+      "stats": {
+        "spell_power": 9
+      }
+    },
+    "질주자의 장화": {
+      "slot": "부츠",
+      "rarity": "UNCOMMON",
+      "price": 175,
+      "description": "빠른 이동을 돕는 장화. 질주에 최적화되어 있다.",
+      "stats": {
+        "speed": 3,
+        "defense": 1
+      }
+    },
+    "판금 각반": {
+      "slot": "각반",
+      "rarity": "COMMON",
+      "description": "민첩성은 좀 떨어져도 엉덩이에 빵꾸 날 일은 막아준다.",
+      "stats": {
+        "defense": 3,
+        "speed": -1
+      },
+      "set_name": "판금",
+      "price": 30
+    },
+    "판금 부츠": {
+      "slot": "부츠",
+      "rarity": "COMMON",
+      "description": "\"이거 신고 발길질 해보고 싶었어. 까는 맛이 좋네.\"",
+      "stats": {
+        "defense": 2,
+        "speed": -1
+      },
+      "set_name": "판금",
+      "price": 20
+    },
+    "판금 투구": {
+      "slot": "투구",
+      "rarity": "COMMON",
+      "description": "가벼운 판금을 덧대었다. 조잡한 화살이나 돌팔매 정도는 막아낼 수 있다.",
+      "stats": {
+        "defense": 2
+      },
+      "set_name": "판금",
+      "price": 15
+    },
+    "판금 흉갑": {
+      "slot": "흉갑",
+      "rarity": "COMMON",
+      "description": "대부분의 날붙이를 막아낼 수 있다. 둔기에는 얄짤없다.",
+      "stats": {
+        "defense": 4,
+        "speed": -1
+      },
+      "set_name": "판금",
+      "price": 40
+    },
+    "플레임 소드": {
+      "slot": "양손 무기",
+      "rarity": "RARE",
+      "price": 365,
+      "weapon_hand": "TWO_HAND",
+      "description": "불의 힘이 깃든 검. 고열에도 검날이 상하지 않는 마법이 걸려 있다. 스킬 '플레임 블레이드'를 사용할 수 있다.",
+      "stats": {
+        "attack": 18,
+        "spell_power": 22
+      },
+      "special": [
+        {
+          "tag": "GRANT_SKILL",
+          "skill": "플레임 블레이드"
+        },
+        {
+          "tag": "ELEMENT_DAMAGE_BONUS",
+          "element": "fire",
+          "mult": 0.12
+        }
+      ]
+    },
+    "하늘걸음": {
+      "slot": "부츠",
+      "rarity": "LEGENDARY",
+      "price": 520,
+      "description": "\"그 누가 인간이 하늘 아래 있다고 하였는가.\"",
+      "stats": {
+        "speed": 28,
+        "defense": 14,
+        "magic_resist": 7,
+        "max_shield": 88
+      },
+      "unique": true,
+      "special": [
+        {
+          "tag": "EVADE_CHANCE",
+          "chance": 0.05
+        }
+      ]
+    },
+    "현자의 망토": {
+      "slot": "망토",
+      "rarity": "UNCOMMON",
+      "price": 160,
+      "description": "배틀 메이지들이 즐겨 입는 망토.",
+      "stats": {
+        "spell_power": 18,
+        "magic_resist": 3,
+        "max_mp": 21
+      }
+    },
+    "화염 지팡이": {
+      "slot": "양손 무기",
+      "rarity": "RARE",
+      "price": 310,
+      "weapon_hand": "TWO_HAND",
+      "description": "화속성 마법의 위력을 높여주는 완드.",
+      "stats": {
+        "spell_power": 53,
+        "max_mp": 29
+      }
+    },
+    "힘의 반지": {
+      "slot": "반지",
+      "rarity": "UNCOMMON",
+      "price": 100,
+      "description": "착용하면 힘이 약간 상승한다.",
+      "stats": {
+        "attack": 4
+      }
+    }
+  },
+  "sets": {
+    "가죽": {
+      "pieces": [
+        "가죽 투구",
+        "가죽 흉갑",
+        "가죽 각반",
+        "가죽 부츠"
+      ],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "stats": {
+            "speed": 1
+          }
+        },
+        {
+          "pieces": 4,
+          "stats": {
+            "speed": 2,
+            "max_hp": 20
+          },
+          "special_tags": [
+            "SET_LEATHER_4"
+          ]
+        }
+      ]
+    },
+    "판금": {
+      "pieces": [
+        "판금 투구",
+        "판금 흉갑",
+        "판금 각반",
+        "판금 부츠"
+      ],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "stats": {
+            "defense": 2
+          }
+        },
+        {
+          "pieces": 4,
+          "stats": {
+            "defense": 4,
+            "max_shield": 40,
+            "speed": -1
+          },
+          "special_tags": [
+            "SET_PLATE_4"
+          ]
+        }
+      ]
+    },
+    "강철": {
+      "pieces": [
+        "강철 투구",
+        "강철 흉갑",
+        "강철 각반",
+        "강철 부츠"
+      ],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "stats": {
+            "max_hp": 39
+          }
+        },
+        {
+          "pieces": 4,
+          "stats": {
+            "defense": 4,
+            "magic_resist": 3,
+            "max_hp": 52
+          },
+          "special_tags": [
+            "SET_STEEL_4"
+          ]
+        }
+      ]
+    },
+    "미스릴": {
+      "pieces": [
+        "미스릴 투구",
+        "미스릴 흉갑",
+        "미스릴 각반",
+        "미스릴 부츠"
+      ],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "stats": {
+            "speed": 2,
+            "magic_resist": 2
+          }
+        },
+        {
+          "pieces": 4,
+          "stats": {
+            "defense": 4,
+            "magic_resist": 4,
+            "max_hp": 54,
+            "speed": 2
+          },
+          "special_tags": [
+            "SET_MITHRIL_4"
+          ]
+        }
+      ]
+    },
+    "드래곤": {
+      "pieces": [
+        "드래곤 헬멧",
+        "드래곤 흉갑",
+        "드래곤 각반",
+        "드래곤 부츠"
+      ],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "special_tags": [
+            "SET_DRAGON_2_ELEMENT_RESIST_ALL_15"
+          ],
+          "stats": {
+            "magic_resist": 94,
+            "defense": 40
+          }
+        },
+        {
+          "pieces": 4,
+          "special_tags": [
+            "SET_DRAGON_4_START_BUFF_DRAGON_POWER"
+          ],
+          "stats": {
+            "attack": 108,
+            "spell_power": 535,
+            "defense": 108,
+            "magic_resist": 108,
+            "max_hp": 624,
+            "max_mp": 240,
+            "speed": 11
+          }
+        }
+      ]
+    }
+  }
+}
