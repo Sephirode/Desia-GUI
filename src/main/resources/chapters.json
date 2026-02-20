@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "서부 황야 지대",
+    "minLevel": 1,
+    "maxLevel": 8,
+    "enemyPool": ["고블린", "슬라임", "좀비", "스켈레톤", "망령", "매드 프리스트"],
+    "boss": "고블린 챔피언",
+    "storyKeys": ["c1.story.1", "c1.story.2", "c1.story.3"]
+  },
+  {
+    "id": 2,
+    "name": "몰락한 왕국",
+    "minLevel": 8,
+    "maxLevel": 20,
+    "enemyPool": ["타락한 마도사", "매드 프리스트", "도적", "나이트워커", "망령", "스켈레톤 전사", "변질된 엘리멘터리"],
+    "boss": "피의 영혼",
+    "storyKeys": ["c2.story.1", "c2.story.2", "c2.story.3"]
+  },
+  {
+    "id": 3,
+    "name": "숲의 양옥집",
+    "minLevel": 20,
+    "maxLevel": 30,
+    "enemyPool": ["흡혈귀", "뱀파이어", "강화된 슬라임", "거대 슬라임", "변질된 엘리멘터리", "매드 프리스트", "타락한 마도사"],
+    "boss": "뱀파이어 로드",
+    "storyKeys": ["c3.story.1", "c3.story.2", "c3.story.3"]
+  },
+  {
+    "id": 4,
+    "name": "전설의 유산",
+    "minLevel": 30,
+    "maxLevel": 55,
+    "enemyPool": ["와이번", "스톤 골렘", "나이트워커", "가디언 슬라임", "갓 슬라임", "레드 드래곤", "블루 드래곤"],
+    "boss": "에인션트 드래곤",
+    "storyKeys": ["c4.story.1", "c4.story.2", "c4.story.3"]
+  },
+  {
+    "id": 5,
+    "name": "둠 이터널",
+    "minLevel": 55,
+    "maxLevel": 80,
+    "enemyPool": ["불 원소 정령", "망령", "스켈레톤 전사", "피의 영혼", "지옥의 변견", "케르베로스"],
+    "boss": "사천왕 아스모데우스",
+    "storyKeys": ["c5.story.1", "c5.story.2", "c5.story.3"]
+  },
+  {
+    "id": 6,
+    "name": "이계의 침략자",
+    "minLevel": 80,
+    "maxLevel": 90,
+    "enemyPool": ["암흑차원신 크림즌 노바", "이차원정령 비잠", "이차원파수기 듀자"],
+    "boss": "암흑차원사신 크림즌 노바 트리니티",
+    "storyKeys": ["c6.story.1", "c6.story.2", "c6.story.3"]
+  },
+  {
+    "id": 7,
+    "name": "인마대전",
+    "minLevel": 90,
+    "maxLevel": 100,
+    "enemyPool": ["사천왕 듀란", "사천왕 콘빅트", "피의 영혼", "이차원수 다크 가넥스"],
+    "boss": "마왕 앨리스",
+    "storyKeys": ["c7.story.1", "c7.story.2", "c7.story.3"]
+  }
+]

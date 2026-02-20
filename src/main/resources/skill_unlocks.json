@@ -1,0 +1,23 @@
+{
+  "마검사": [
+    { "level": 1,  "skills": [ "심연 베기", "분기" ] },
+    { "level": 10, "skills": [ "마력 방출" ] },
+    { "level": 20, "skills": [ "혈마법" ] },
+    { "level": 30, "skills": [ "어둠 흡수" ] },
+    { "level": 40, "skills": [ "섬광 찌르기" ] }
+  ],
+  "마법사": [
+    { "level": 1,  "skills": [ "파이어볼", "차가운 손" ] },
+    { "level": 10, "skills": [ "플레임 디스크" ] },
+    { "level": 20, "skills": [ "마나 수집" ] },
+    { "level": 30, "skills": [ "번개 사슬" ] },
+    { "level": 40, "skills": [ "극한 냉기" ] }
+  ],
+  "용사": [
+    { "level": 1,  "skills": [ "강타", "수호" ] },
+    { "level": 10, "skills": [ "전투의 외침" ] },
+    { "level": 20, "skills": [ "회피" ] },
+    { "level": 30, "skills": [ "돌진" ] },
+    { "level": 40, "skills": [ "불굴" ] }
+  ]
+}

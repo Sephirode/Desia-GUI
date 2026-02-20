@@ -1,0 +1,40 @@
+{
+  "version" : 2,
+  "playerClass" : "전사",
+  "playerName" : "몰라레후",
+  "chapter" : 2,
+  "act" : 1,
+  "merchantActThisChapter" : 8,
+  "merchantDoneThisChapter" : false,
+  "level" : 4,
+  "exp" : 170.0,
+  "hp" : 413.0,
+  "mp" : 100.0,
+  "shield" : 70.0,
+  "bonusMaxHp" : 0.0,
+  "bonusMaxMp" : 0.0,
+  "bonusAtk" : 0.0,
+  "bonusMagic" : 0.0,
+  "bonusDef" : 0.0,
+  "bonusMdef" : 0.0,
+  "bonusSpd" : 0.0,
+  "gold" : 450.0,
+  "equipped" : {
+    "HELMET" : "매지컬 실크햇",
+    "CHEST" : "드래곤 흉갑",
+    "LEGS" : "미스릴 각반",
+    "BOOTS" : null,
+    "CLOAK" : "현자의 망토",
+    "RING1" : "수호의 반지",
+    "RING2" : null,
+    "WEAPON1" : "미스릴 아밍 소드",
+    "WEAPON2" : "스파이크 실드"
+  },
+  "inventory" : {
+    "'보호막' 스크롤" : 2,
+    "체력 포션" : 3,
+    "이상한사탕" : 12,
+    "미스릴 각반" : 1,
+    "유리 완드" : 1
+  }
+}
